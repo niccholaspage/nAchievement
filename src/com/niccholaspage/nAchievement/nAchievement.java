@@ -59,10 +59,7 @@ public class nAchievement extends JavaPlugin {
     			Player player = (Player) sender;
     			if (!(Permissions.has(player, "nAchievement.add"))) return true;
     		}
-    		if (args.length < 3){
-    			sender.sendMessage("/na add achievement");
-    			return true;
-    		}
+    		if (args.length < 3) return false;
     		if (!(args[2].equalsIgnoreCase("all"))){
     		if (!(achievements.containsKey(args[2].toLowerCase()))){
     			sender.sendMessage("That achievement does not exist!");
