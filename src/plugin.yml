@@ -1,0 +1,10 @@
+name: nAuth
+
+main: com.niccholaspage.nAchievement.nAchievement
+
+version: 0.1
+
+commands:
+  na:
+    description: All the nAchievement commands
+    usage: /<command> add player achievement
